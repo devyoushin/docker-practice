@@ -18,7 +18,7 @@ docker-practice/
 ├── agents/                    # doc-writer, dockerfile-reviewer, compose-designer, security-auditor
 ├── templates/                 # service-doc, runbook, incident-report
 ├── rules/                     # doc-writing, docker-conventions, security-checklist, monitoring
-└── *-guide.md                 # 주제별 가이드 문서
+└── docs/                      # 주제별 가이드 문서
 ```
 
 ---
@@ -29,7 +29,7 @@ docker-practice/
 |--------|------|---------|
 | `/new-doc` | 새 가이드 문서 생성 | `/new-doc multi-stage-build` |
 | `/new-runbook` | 새 런북 생성 | `/new-runbook 컨테이너 긴급 로그 수집` |
-| `/review-doc` | Dockerfile/문서 검토 | `/review-doc image-guide.md` |
+| `/review-doc` | Dockerfile/문서 검토 | `/review-doc docs/image-guide.md` |
 | `/add-troubleshooting` | 트러블슈팅 케이스 추가 | `/add-troubleshooting OOM 반복 재시작` |
 | `/search-kb` | 지식베이스 검색 | `/search-kb 볼륨 퍼미션 문제` |
 
