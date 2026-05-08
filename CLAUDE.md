@@ -46,6 +46,7 @@ docker-practice/
 | `network-guide.md` | 네트워크 드라이버, DNS, 포트 포워딩 |
 | `compose-guide.md` | Docker Compose v2 실전 |
 | `troubleshooting-guide.md` | 트러블슈팅 |
+| `port-management-guide.md` | 포트 바인딩, 포트 관리, 보안 |
 
 ---
 
