@@ -181,3 +181,4 @@ docker inspect web | jq '.[0].NetworkSettings.Networks'
 - [Docker 네트워킹 공식 문서](https://docs.docker.com/engine/network/)
 - [Bridge 네트워크 드라이버](https://docs.docker.com/engine/network/drivers/bridge/)
 - [네트워킹 튜토리얼](https://docs.docker.com/engine/network/tutorials/)
+- [포트 관리 가이드](./port-management-guide.md) — 포트 바인딩 문법, 보안 원칙, 트러블슈팅
