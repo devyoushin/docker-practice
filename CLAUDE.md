@@ -15,9 +15,9 @@ docker-practice/
 ├── .claude/
 │   ├── settings.json
 │   └── commands/              # /new-doc, /new-runbook, /review-doc, /add-troubleshooting, /search-kb
-├── agents/                    # doc-writer, dockerfile-reviewer, compose-designer, security-auditor
-├── templates/                 # service-doc, runbook, incident-report
-├── rules/                     # doc-writing, docker-conventions, security-checklist, monitoring
+├── docs/agents/                    # doc-writer, dockerfile-reviewer, compose-designer, security-auditor
+├── docs/templates/                 # service-doc, runbook, incident-report
+├── docs/rules/                     # doc-writing, docker-conventions, security-checklist, monitoring
 └── docs/                      # 주제별 가이드 문서
 ```
 

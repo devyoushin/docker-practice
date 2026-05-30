@@ -35,19 +35,19 @@ curl http://localhost:8080
 ## 학습 경로
 
 ### 1단계: 설치
-- [Docker 설치](./install.md)
+- [Docker 설치](./docs/install.md)
 
 ### 2단계: 핵심 개념
-- [아키텍처 개요](./architecture-guide.md)
-- [이미지 관리](./image-guide.md)
-- [네트워크](./network-guide.md)
-- [볼륨 (데이터 관리)](./volume-guide.md)
+- [아키텍처 개요](./docs/architecture-guide.md)
+- [이미지 관리](./docs/image-guide.md)
+- [네트워크](./docs/network-guide.md)
+- [볼륨 (데이터 관리)](./docs/volume-guide.md)
 
 ### 3단계: 멀티 컨테이너
-- [Docker Compose](./compose-guide.md)
+- [Docker Compose](./docs/compose-guide.md)
 
 ### 4단계: 문제 해결
-- [트러블슈팅 가이드](./troubleshooting-guide.md)
+- [트러블슈팅 가이드](./docs/troubleshooting-guide.md)
 
 ---
 
@@ -56,13 +56,16 @@ curl http://localhost:8080
 ```
 docker-practice/
 ├── README.md
-├── install.md               # Docker 설치 가이드
-├── architecture-guide.md    # 아키텍처 개요
-├── image-guide.md           # 이미지 빌드 및 관리
-├── network-guide.md         # 네트워크 (bridge, host, overlay)
-├── volume-guide.md          # 볼륨 및 데이터 관리
-├── compose-guide.md         # Docker Compose
-└── troubleshooting-guide.md # 트러블슈팅
+├── CLAUDE.md
+├── docs/
+│   ├── README.md
+│   ├── install.md
+│   ├── architecture-guide.md
+│   ├── image-guide.md
+│   ├── compose-guide.md
+│   └── troubleshooting-guide.md
+└── ops/
+    └── README.md
 ```
 
 ---
