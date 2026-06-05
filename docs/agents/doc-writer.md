@@ -19,6 +19,6 @@ description: Docker 가이드 문서 작성 전문가. Dockerfile, compose.yml, 
 5. **트러블슈팅** — 자주 겪는 문제
 
 ## 참조
-- `CLAUDE.md` — 환경 설정 (Docker 버전)
-- `rules/docker-conventions.md` — 코드 표준
-- `templates/service-doc.md` — 문서 템플릿
+- `../../CLAUDE.md` — 환경 설정 (Docker 버전)
+- `../rules/docker-conventions.md` — 코드 표준
+- `../templates/service-doc.md` — 문서 템플릿

@@ -25,7 +25,7 @@ Docker Host
               │   호스트 eth0  │
               │  (192.168.1.x) │
               └───────┬───────┘
-                      │ NAT (iptables MASQUERADE)
+                      │ NAT (iptables 또는 nftables masquerade)
               ┌───────┴───────┐
               │    docker0    │  ← 가상 브리지 (172.17.0.1/16)
               └──┬────────┬──┘
@@ -33,6 +33,10 @@ Docker Host
          container A   container B
          172.17.0.2    172.17.0.3
 ```
+
+> Docker Engine은 기본적으로 iptables 백엔드를 사용합니다.
+> Docker Engine 29.0.0부터 nftables 백엔드를 선택할 수 있지만, 공식 문서 기준으로 아직 실험적 기능입니다.
+> 자세한 설정은 [Docker 설치 문서의 방화벽 백엔드](../getting-started/install.md#방화벽-백엔드-iptables와-nftables)를 참고하세요.
 
 ```bash
 # 기본 bridge 네트워크 확인
@@ -122,7 +126,7 @@ docker port <container_id>   # 할당된 포트 확인
 ```
 
 ```
-호스트:8080 ──iptables DNAT──▶ 컨테이너:80
+호스트:8080 ──DNAT/firewall backend──▶ 컨테이너:80
 ```
 
 ---
@@ -181,4 +185,4 @@ docker inspect web | jq '.[0].NetworkSettings.Networks'
 - [Docker 네트워킹 공식 문서](https://docs.docker.com/engine/network/)
 - [Bridge 네트워크 드라이버](https://docs.docker.com/engine/network/drivers/bridge/)
 - [네트워킹 튜토리얼](https://docs.docker.com/engine/network/tutorials/)
-- [포트 관리 가이드](./port-management-guide.md) — 포트 바인딩 문법, 보안 원칙, 트러블슈팅
+- [포트 관리 가이드](../operations/port-management-guide.md) — 포트 바인딩 문법, 보안 원칙, 트러블슈팅
