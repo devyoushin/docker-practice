@@ -391,3 +391,4 @@ sudo rm -rf /var/lib/containerd
 - [Install Docker Engine on RHEL](https://docs.docker.com/engine/install/rhel/)
 - [Packet filtering and firewalls](https://docs.docker.com/engine/network/packet-filtering-firewalls/)
 - [Docker with nftables](https://docs.docker.com/engine/network/firewall-nftables/)
+- [Docker 업그레이드](../install/upgrade/)
